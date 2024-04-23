@@ -15,7 +15,7 @@ template = """
 
     Here are some examples of words in different languages:
     - Català: burru, taula, cadira, forquilla
-    - Castellà: tonto, mesa, silla, tenedor
+    - Castellano: tonto, mesa, silla, tenedor
 
 
     Please start the redaction with a warm introduction. Add the introduction \
@@ -44,18 +44,18 @@ def load_LLM(openai_api_key):
 
 
 #Page title and header
-st.set_page_config(page_title="Re-write your text")
-st.header("Re-write your text")
+st.set_page_config(page_title="write your idea")
+st.header("Re-write your idea Mia")
 
 
 #Intro: instructions
 col1, col2 = st.columns(2)
 
 with col1:
-    st.markdown("Re-write your text in different styles.")
+    st.markdown("Re-write your text gor different ages.")
 
 with col2:
-    st.write("Contact with [AI Accelera](https://aiaccelera.com) to build your AI Projects")
+    st.write("Contact with [moaquitos](https://mosquitobooks.com.com) to build your Ideas")
 
 
 #Input OpenAI API Key
@@ -69,7 +69,7 @@ openai_api_key = get_openai_api_key()
 
 
 # Input
-st.markdown("## Enter the text you want to re-write")
+st.markdown("## Enter your idea you want to write")
 
 def get_draft():
     draft_text = st.text_area(label="Text", label_visibility='collapsed', placeholder="Your Text...", key="draft_input")
@@ -85,13 +85,13 @@ if len(draft_input.split(" ")) > 700:
 col1, col2 = st.columns(2)
 with col1:
     option_edad = st.selectbox(
-        'Which edad would you like your redaction to have?',
-        ('Formal', 'Informal'))
+        'Que edad tiene el pequeño cabroncete que va a leer el libro',
+        ('3 años', '6 años'))
     
 with col2:
     option_language = st.selectbox(
-        'Which English language would you like?',
-        ('American', 'British'))
+        'En que ideoma quieres el libro?',
+        ('Català', 'Castellano'))
     
     
 # Output
