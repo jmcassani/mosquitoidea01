@@ -52,10 +52,10 @@ st.header("Re-write your idea Mia")
 col1, col2 = st.columns(2)
 
 with col1:
-    st.markdown("Re-write your text gor different ages.")
+    st.markdown("Re-write your text for different ages.")
 
 with col2:
-    st.write("Contact with [moaquitos](https://mosquitobooks.com.com) to build your Ideas")
+    st.write("Contact with [mosquitos](https://mosquitobooksbarcelona.com/) to build your Ideas")
 
 
 #Input OpenAI API Key
@@ -85,12 +85,12 @@ if len(draft_input.split(" ")) > 700:
 col1, col2 = st.columns(2)
 with col1:
     option_edad = st.selectbox(
-        'Que edad tiene el pequeño cabroncete que va a leer el libro',
+        'Que edad tiene el cabroncete que va a leer el libro',
         ('3 años', '6 años'))
     
 with col2:
     option_language = st.selectbox(
-        'En que ideoma quieres el libro?',
+        'En que idioma quieres el libro?',
         ('Català', 'Castellano'))
     
     
